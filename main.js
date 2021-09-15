@@ -14,7 +14,7 @@ function createWindow () {
     }
   })
 
-  win.loadURL("https://stet.art");
+  win.loadURL("https://stet.art", {userAgent: 'STET'});
 
   win.on('page-title-updated', (evt) => {
     evt.preventDefault();
