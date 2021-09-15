@@ -1,0 +1,29 @@
+{
+  "name": "STET",
+  "version": "1.0",
+  "description": "STET Browser App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "rm -rf dist && electron-builder build --mac --win --linux"
+  },
+  "keywords": [],
+  "author": "stet",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^12.0.4",
+    "electron-builder": "^22.10.5"
+  },
+  "repository": "https://github.com/stet/stet-browser",
+  "homepage": "https://stet.art",
+  "build": {
+    "appId": "art.stet.electron",
+    "mac": {
+      "category": "public.app-category.social-networking",
+      "target": "zip"
+    }
+  },
+  "dependencies": {
+    "update-electron-app": "^2.0.1"
+  }
+}
