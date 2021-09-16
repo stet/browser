@@ -1,0 +1,46 @@
+{
+    "appId": "art.stet.electron",
+    "productName": "STET",
+    "copyright": "STET",
+    "directories": {
+        "app": ".",
+        "output": "out",
+        "buildResources": "build-res"
+    },
+    "files": [
+        "package.json",
+        "app/**/*",
+        "node_modules"
+    ],
+    "dmg": {
+        "background": null,
+        "backgroundColor": "#121212",
+        "window": {
+            "width": "1200",
+            "height": "800"
+        },
+        "contents": [
+            {
+                "x": 100,
+                "y": 100
+            },
+            {
+                "x": 300,
+                "y": 100,
+                "type": "link",
+                "path": "/Applications"
+            }
+        ]
+    },
+    "mac": {
+        "target": "dmg",
+        "category": "public.app-category.utilities"
+      },
+    "win": {
+        "target": "nsis"
+    },
+    "linux": {
+        "target": "AppImage",
+        "category": "Utility"
+    }
+}

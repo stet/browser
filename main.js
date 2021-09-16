@@ -14,7 +14,7 @@ function createWindow () {
     }
   })
 
-  win.loadURL("https://stet.art", {userAgent: 'STET'});
+  win.loadURL("https://stet.art", {userAgent: 'STET-LETITSTAND-SULLEMINA'});
 
   win.on('page-title-updated', (evt) => {
     evt.preventDefault();
